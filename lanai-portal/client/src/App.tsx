@@ -65,7 +65,7 @@ function AdvisorPortalGuard({ children }: { children: React.ReactNode }) {
           <Button
             className="w-full text-white gap-2"
             style={{ background: "oklch(0.25 0.06 145)" }}
-            onClick={() => { window.location.href = getLoginUrl(); }}
+            onClick={async () => { window.location.href = await getLoginUrl(); }}
           >
             Sign In
           </Button>
